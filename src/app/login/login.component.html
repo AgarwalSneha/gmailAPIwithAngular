@@ -1,0 +1,8 @@
+<h1>click</h1>
+<button (click)="auth.login()" >
+  Login.
+</button>
+<div *ngIf="auth.user$ | async">
+
+    <button (click)="auth.login()" class="button is-success">login</button>
+</div>
